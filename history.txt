@@ -1,0 +1,562 @@
+    1  ls
+    2  nvidia-smi
+    3  nnvd
+    4  nnvci
+    5  nvcc
+    6  nvcc -i
+    7  nvcc --version
+    8  exit
+    9  mkdir -p ~/miniconda3
+   10  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+   11  bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+   12  rm -rf ~/miniconda3/miniconda.sh
+   13  ~/miniconda3/bin/conda init bash
+   14  ~/miniconda3/bin/conda init zsh
+   15  conda update conda
+   16  exit
+   17  jobs
+   18  nvcc --version
+   19  conda env list
+   20  conda activate PolyglotProto
+   21  jobs
+   22  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 300 --store_model 1 --scheduler Cosine
+   23  export PYTHONPATH=$PYTHONPATH:$PATH
+   24  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 300 --store_model 1 --scheduler Cosine
+   25  cd PolyglotProto/
+   26  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 300 --store_model 1 --scheduler Cosine
+   27  jobs
+   28  exit
+   29  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 3 --store_model 1 --scheduler Cosine
+   30  cd PolyglotProto
+   31  conda activate PolyglotProto
+   32  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 3 --store_model 1 --scheduler Cosine
+   33  export PYTHONPATH=$PYTHONPATH:$PATH
+   34  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 3 --store_model 1 --scheduler Cosine
+   35  nohup CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 3 --store_model 1 --scheduler Cosine &
+   36  nohup 'CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 3 --store_model 1 --scheduler Cosine' &
+   37  jobs
+   38  CUDA_VISIBLE_DEVICES=0 nohup python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 3 --store_model 1 --scheduler Cosine &
+   39  jobs
+   40  exit
+   41  conda update conda
+   42  ssh-keygen -t ed25519 -C “matanost@gmail.com”
+   43  ls
+   44  cat ~/.ssh/id_ed25519.pub 
+   45  eval "$(ssh-agent -s)"
+   46  ssh-add ~/.ssh/id_ed25519
+   47  git clone git@github.com:ocatias/PolyglotProto.git
+   48  ls
+   49  conda create -n PolyglotProto
+   50  conda activate PolyglotProto
+   51  ls
+   52  git status
+   53  cd PolyglotProto/
+   54  git status
+   55  git fetch --all
+   56  git branch -vv
+   57  git branch
+   58  git checkout server_run
+   59  git status
+   60  nvcc
+   61  ncvv
+   62  nvcc --version
+   63  conda install cudatoolkit=12.3 pytorch torchvision torchaudio pyg=2.2.0 pytorch-sparse pytorch-scatter --file requirements.txt -c pyg pytorch conda-forge
+   64  conda install cudatoolkit=12.3 pytorch torchvision torchaudio pyg=2.2.0 pytorch-sparse pytorch-scatter --file requirements.txt -c pyg pytorch
+   65  conda install cudatoolkit=12.3 pytorch torchvision torchaudio pyg=2.2.0 pytorch-sparse pytorch-scatter --file requirements.txt -c pyg -c pytorch
+   66  conda install cudatoolkit=12.3 pytorch torchvision torchaudio pyg=2.2.0 pytorch-sparse pytorch-scatter --file requirements.txt -c pyg -c pytorch -y
+   67  python
+   68  python3
+   69  CUDA_VISIBLE_DEVICES=0 python3 -c 'import torch ; print(torch.cuda.is_available()) ; device = torch.device("cuda") ; torch.Tensor(1).to(device)'
+   70  conda install pytorch -c pytorch
+   71  CUDA_VISIBLE_DEVICES=0 python3 -c 'import torch ; print(torch.cuda.is_available()) ; device = torch.device("cuda") ; torch.Tensor(1).to(device)'
+   72  conda list
+   73  which python3
+   74  python3
+   75  conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 -c pytorch; conda install -c pyg pyg=2.2.0; pip install -r requirements.txt
+   76  conda install -c pyg pyg=2.2.0
+   77  conda install -c pyg pyg
+   78  CUDA_VISIBLE_DEVICES=0 python3 -c 'import torch ; print(torch.cuda.is_available()) ; device = torch.device("cuda") ; torch.Tensor(1).to(device)'
+   79  conda install -c pytorch pytorch
+   80  conda list
+   81  conda list | grep cpu
+   82  conda install pytorch torchvision torchaudio pytorch-cuda=12.3 -c pytorch -c nvidia
+   83  conda list | grep cpu
+   84  conda install pytorch torchvision torchaudio pytorch-cuda=12.3 -c pytorch -c nvidia --force
+   85  conda list | grep cpu
+   86  CUDA_VISIBLE_DEVICE=0 conda install pytorch torchvision torchaudio pytorch-cuda=12.3 -c pytorch -c nvidia --force
+   87  CUDA_VISIBLE_DEVICE=0 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia --force
+   88  CUDA_VISIBLE_DEVICES=0 python3 -c 'import torch ; print(torch.cuda.is_available()) ; device = torch.device("cuda") ; torch.Tensor(1).to(device)'
+   89  conda list | grep cpu
+   90  nvidia-sni
+   91  nvidia-smi
+   92  CUDA_VISIBLE_DEVICES=0 python3 -c 'import torch ; print(torch.cuda.is_available()) ; device = torch.device("cuda") ; torch.Tensor(1).to(device)'
+   93  conda list | grep cpu
+   94  Can you try to install via
+   95  conda install pyg=*=*cu* -c pyg
+   96  conda list | grep cpu
+   97  conda install pytorch=*=*cu* -c pytorch
+   98  CUDA_VISIBLE_DEVICES=0 python3 -c 'import torch ; print(torch.cuda.is_available()) ; device = torch.device("cuda") ; torch.Tensor(1).to(device)'
+   99  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine
+  100  export PYTHONPATH=$PYTHONPATH:$PATH
+  101  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine
+  102  conda install pytorch-sparse=*=*cu* -c pyg
+  103  conda list | grep cpu
+  104  conda install pytorch-sparse -c pyg --fo
+  105  conda install pytorch-sparse=*=*cu* -c pyg --force
+  106  conda install pytorch-sparse -c pyg --force
+  107  conda install pytorch-sparse=0.6.8 -c pyg --force
+  108  conda install pytorch-sparse=0.6.* -c pyg --force
+  109  conda install pytorch-sparse=0.6.18 -c pyg --force
+  110  pip install pytorch-sparse=0.6.18
+  111  pip install pytorch-sparse==0.6.18
+  112  pip install torch-sparse==0.6.18
+  113  conda list | grep cpu
+  114  conda list | grep sparse
+  115  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine
+  116  conda install pytorch-scatter -c pyg
+  117  pip install torch-scatter==2.1.2
+  118  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine
+  119  pip install wandb
+  120  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine
+  121  pip install -U --force-reinstall charset-normalizer
+  122  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine
+  123  wandb login
+  124  CUDA_VISIBLE_DEVICES=0 python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine
+  125  jobs
+  126  nohup
+  127  nohup --help
+  128  lsof | grep nohup.out
+  129  ls
+  130  less PolyglotProto/
+  131  cd PolyglotProto/
+  132  ls
+  133  less nohup.out 
+  134  lsof | grep nohup.out
+  135  ps x
+  136  CUDA_VISIBLE_DEVICES=1 nohup python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine &
+  137  less nohup.out 
+  138  conda install yaml
+  139  conda env list
+  140  conda activate PolyglotProto
+  141  $PATH
+  142  ps x
+  143  CUDA_VISIBLE_DEVICES=1 nohup python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine &
+  144  less nohup.out 
+  145  export PYTHONPATH=$PYTHONPATH:$PATH
+  146  CUDA_VISIBLE_DEVICES=1 nohup python Exp/run_model.py --dataset Multi_ZINC,ogbg-molhiv,DD,cuneiform,enzymes,bzr_md --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine &
+  147  jobs
+  148  ps x
+  149  exit
+  150  ps x
+  151  exit
+  152  ps x
+  153  cd PolyglotProto/
+  154  grep wandb nohup.out 
+  155  grep 1500 nohup.out 
+  156  cat nohup.out 
+  157  ls
+  158  conda env activate
+  159  conda env list
+  160  conda activate PolyglotProto
+  161  ls
+  162  cd PolyglotProto/
+  163  export PYTHONPATH=$PYTHONPATH:$PATH
+  164  ps x
+  165  nvidia-smi
+  166  CUDA_VISIBLE_DEVICES=0 nohup python Exp/run_model.py --dataset ZINC --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine &
+  167  jobs
+  168  ps x
+  169  conda env list
+  170  conda activate PolyglotProto
+  171  git status
+  172  cd PolyglotProto/
+  173  git status
+  174  git pull
+  175  git fetch --all
+  176  got branch --vv
+  177  got branch -vv
+  178  got branch
+  179  git branch -vv
+  180  git checkout MultiDatasetLearning
+  181  git status
+  182  git pull
+  183  git branch
+  184  git checkout -
+  185  git checkout MultiDatasetLearning
+  186  git status
+  187  git log
+  188  ps x
+  189  export PYTHONPATH=$PYTHONPATH:$PATH
+  190  CUDA_VISIBLE_DEVICES=0 nohup python Exp/run_model.py --dataset ZINC --emb_dim 512 --num_mp_layers 7 --residual 1 --epochs 1500 --store_model 1 --scheduler Cosine &
+  191  ls
+  192  cd PolyglotProto/
+  193  ls
+  194  cat nohup.out 
+  195  ls
+  196  git status
+  197  git branch
+  198  git fetch --all
+  199  git branch -remote
+  200  git branch --remote
+  201  git fetch --all
+  202  git branch --remote
+  203  git checkout MultiDatasetTransfer
+  204  git status
+  205  git pull
+  206  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &
+  207  cat nohup.out 
+  208  cuda env list
+  209  conda env list
+  210  conda activate PolyglotProto
+  211  echo 'CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining.out &' >> ../pretraining_cmd
+  212  cat ../pretraining_cmd 
+  213  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining.out &
+  214  jobs
+  215  cat nohup_pretraining.out 
+  216  echo 'export PYTHONPATH=$PYTHONPATH:$PATH' > ../python_path.sh
+  217  bash ../python_path.sh 
+  218  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining.out &
+  219  חםנד
+  220  jobs
+  221  ps x
+  222  cat nohup_pretraining.out 
+  223  cat ../python_path.sh 
+  224  export PYTHONPATH=$PYTHONPATH:$PATH
+  225  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining.out &
+  226  jobs
+  227  cat nohup_pretraining.out 
+  228  git pull
+  229  cat nohup_pretraining.out 
+  230  cat Configs/pretraining_config.sh 
+  231  python Scripts/merge_datasets.py --dataset 'DD, Enzymes'
+  232  python Scripts/merge_datasets.py -dataset 'DD, Enzymes'
+  233  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining.out &
+  234  cat nohup_pretraining.out 
+  235  ls
+  236  ls Data/
+  237  ls Data/CustomDatasets/Multi_DD,Enzymes/
+  238  less Configs/pretraining_config.sh 
+  239  git pull
+  240  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining.out &
+  241  jobs
+  242  cat nohup_pretraining.out 
+  243  ls ./Data/CustomDatasets/Multi_DD,Enzymes/info.json 
+  244  cat ./Data/CustomDatasets/Multi_DD,Enzymes/info.json 
+  245  ls
+  246  git status
+  247  cat Data/
+  248  cd Data/
+  249  ls
+  250  cd CustomDatasets/
+  251  ls
+  252  rm -r Multi_DD,ENZYMES/
+  253  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining.out &
+  254  jobs
+  255  cat nohup_pretraining.out
+  256  cd ../../
+  257  cat nohup_pretraining.out
+  258  cat ./Data/CustomDatasets/Multi-DD,Enzymes/info.json
+  259  cat Data/CustomDatasets/Multi-DD,Enzymes/info.json
+  260  cat Data/CustomDatasets/Multi-DD, Enzymes/info.json
+  261  cat Data/CustomDatasets/Multi-DD,Enzymes/info.json
+  262  cat Data/CustomDatasets/Multi_DD,Enzymes/info.json
+  263  cat Data/CustomDatasets/Multi-DD,Enzymes/info.json
+  264  cat Data/CustomDatasets/Multi_DD,Enzymes/info.json
+  265  git pull
+  266  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining.out &
+  267  cat nohup_pretraining.out 
+  268  ps x
+  269  jobs
+  270  ps x
+  271  cat nohup_pretraining.out 
+  272  git pull
+  273  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining.out &
+  274  ps x
+  275  jova
+  276  jobs
+  277  cat nohup_pretraining.out 
+  278  git pull
+  279  ls
+  280  git pull
+  281  echo 'CUDA_VISIBLE_DEVICES=0 nohup bash Configs/finetuning_config.sh &> nohup_finetuning.out &' > finetuning_cmd
+  282  mv finetuning_cmd  ../
+  283  cat ../finetuning_cmd 
+  284  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/finetuning_config.sh &> nohup_finetuning.out &
+  285  jobs
+  286  cat nohup_finetuning.out 
+  287  pwd
+  288  git pull
+  289  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/finetuning_config.sh &> nohup_finetuning.out &
+  290  jobs
+  291  ps x
+  292  cat nohup_finetuning.out 
+  293  python
+  294  git pull
+  295  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/finetuning_config.sh &> nohup_finetuning.out &
+  296  jobs
+  297  cat nohup_finetuning.out 
+  298  git pull
+  299  ls
+  300  git branch
+  301  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining_config.out &
+  302  cat ../pretraining_cmd 
+  303  echo 'CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining_config.out &' > pretraining_store_best_cmd
+  304  ps x
+  305  jobs
+  306  cat Configs/pretraining_config.sh 
+  307  git pull
+  308  ls
+  309  rm *.out
+  310  ls
+  311  mv pretraining_store_best_cmd ../
+  312  cat Configs/pretraining_config.sh 
+  313  git branch
+  314  git pull
+  315  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining_config.out &
+  316  jobs
+  317  cat nohup_pretraining_config.out 
+  318  echo 'python Exp/run_model.py --JK last --activation relu --batch_size 32 --dataset Multi-DD,ENZYMES --device 0 --drop_feat 0 --drop_out 0.1 --emb_dim 64 --epochs 300 --feat codebook --freeze_mp 0 --load_model "" --lr 0.1 --max_time 12 --model GIN --model_id c57tw3yr_qi9wq60y_serene-sweep-200 --num_mlp_layers 2 --num_mp_layer 6 --num_mp_layers 6 --pooling sum --replace_feat_enc 0 --replace_head 1 --residual 0 --scheduler ReduceLROnPlateau --scheduler_decay_rate 0.5 --scheduler_min_lr 1e-05 --scheduler_patience 10 --seed 42 --split 0 --swap_feat 0 --tracking 1 --train_fraction 1 --store_model 1' > store_best_output_cmd.sh
+  319  cd ../
+  320  cat pretraining_store_best_cmd 
+  321  echo 'CUDA_VISIBLE_DEVICES=0 nohup store_best_output_cmd.sh &> nohup_pretraining_result.out &' > pretraining_run_store_best_output_cmd
+  322  cd -
+  323  cat ../pretraining_run_store_best_output_cmd 
+  324  CUDA_VISIBLE_DEVICES=0 nohup store_best_output_cmd.sh &> nohup_pretraining_result.out &
+  325  jobs
+  326  cat nohup_pretraining_result.out 
+  327  cat store_best_output_cmd.sh
+  328  cat ../pretraining_store_best_cmd 
+  329  less ../pretraining_run_store_best_output_cmd 
+  330  cat  ../pretraining_run_store_best_output_cmd
+  331  echo 'CUDA_VISIBLE_DEVICES=0 nohup bash store_best_output_cmd.sh &> nohup_pretraining_result.out &' > ../pretraining_run_store_best_output_cmd
+  332  cat  ../pretraining_run_store_best_output_cmd
+  333  CUDA_VISIBLE_DEVICES=0 nohup bash store_best_output_cmd.sh &> nohup_pretraining_result.out &
+  334  jobs
+  335  cat nohup_pretraining_result.out 
+  336  cat store_best_output_cmd.sh 
+  337  git pull
+  338  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/pretraining_config.sh &> nohup_pretraining_config.out &
+  339  jobs
+  340  cat nohup_pretraining_config.out
+  341  cat nohup_pretraining_result.out 
+  342  cat ../pretraining_run_store_best_output_cmd 
+  343  cat  store_best_output_cmd.sh
+  344  echo 'CUDA_VISIBLE_DEVICES=0 nohup bash nohup_pretraining_config.out &> nohup_pretraining_result.out &' > ../pretraining_run_store_best_output_cmd
+  345  cat ../pretraining_run_store_best_output_cmd
+  346  CUDA_VISIBLE_DEVICES=0 nohup bash nohup_pretraining_config.out &> nohup_pretraining_result.out &
+  347  cd PolyglotProto/
+  348  conda list env
+  349  cd ../
+  350  conda list env
+  351  conda env list
+  352  conda activate PolyglotProto
+  353  cd PolyglotProto/
+  354  cat ../python_path.sh 
+  355  export PYTHONPATH=$PYTHONPATH:$PATH
+  356  jobs
+  357  ps x
+  358  cat nohup_pretraining_result.out 
+  359  cat nohup_pretraining_config.out 
+  360  cat ../pretraining_store_best_cmd 
+  361  cat ../pretraining_run_store_best_output_cmd 
+  362  echo 'python Exp/run_model.py --JK last --activation relu --batch_size 32 --dataset Multi_DD,Enzymes --device 0 --drop_feat 0 --drop_out 0.1 --emb_dim 64 --epochs 300 --feat codebook --freeze_mp 0 --load_model "" --lr 0.1 --max_time 12 --model GIN --model_id c57tw3yr_qi9wq60y_serene-sweep-200 --num_mlp_layers 2 --num_mp_layer 6 --num_mp_layers 6 --pooling sum --replace_feat_enc 0 --replace_head 1 --residual 0 --scheduler ReduceLROnPlateau --scheduler_decay_rate 0.5 --scheduler_min_lr 1e-05 --scheduler_patience 10 --seed 42 --split 0 --swap_feat 0 --tracking 1 --train_fraction 1 --store_model 1' > store_best_output_cmd.sh 
+  363  echo 'CUDA_VISIBLE_DEVICES=0 nohup bash store_best_output_cmd.sh &> nohup_pretraining_result.out &' > ../pretraining_run_store_best_output_cmd 
+  364  cat ../pretraining_run_store_best_output_cmd
+  365  CUDA_VISIBLE_DEVICES=0 nohup bash store_best_output_cmd.sh &> nohup_pretraining_result.out &
+  366  jobs
+  367  cat nohup_pretraining_result.out
+  368  cat Configs/finetuning_config.sh 
+  369  cat ../finetuning_cmd 
+  370  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/finetuning_config.sh &> nohup_finetuning.out &
+  371  jobs
+  372  cat CUDA_VISIBLE_DEVICES=0 nohup bash Configs/finetuning_config.sh &> nohup_finetuning.out
+  373  cat nohup_finetuning.out
+  374  cat nohup_finetuning.out 
+  375  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/finetuning_config.sh &> nohup_finetuning.out &
+  376  jobs
+  377  ps x
+  378  cat Configs/finetuning_config.sh
+  379  cat nohup_finetuning.out
+  380  wandb agent spooky-platypuses/polyglot-graph-networks/k1933wqi
+  381  echo 'CUDA_VISIBLE_DEVICES=0 nohup wandb agent spooky-platypuses/polyglot-graph-networks/k1933wqi &> nohup_wandb_agent.out' > ../wandb_agent_cmd
+  382  CUDA_VISIBLE_DEVICES=0 nohup wandb agent spooky-platypuses/polyglot-graph-networks/k1933wqi &> nohup_wandb_agent.out
+  383  bg
+  384  jobs
+  385  cat nohup_wandb_agent.out 
+  386  git pull
+  387  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/finetuning_config.sh &> nohup_finetuning.out &
+  388  jobs
+  389  cat nohup_finetuning.out
+  390  echo 'CUDA_VISIBLE_DEVICES=0 nohup wandb agent spooky-platypuses/polyglot-graph-networks/4gcc4gsz &> nohup_wandb_agent.out' > ../wandb_agent_cmd
+  391  cat ../wandb_agent_cmd 
+  392  CUDA_VISIBLE_DEVICES=0 nohup wandb agent spooky-platypuses/polyglot-graph-networks/4gcc4gsz &> nohup_wandb_agent.out
+  393  jobs
+  394  cat  nohup_wandb_agent.out
+  395  conda env list
+  396  conda activate PolyglotProto
+  397  cat python_path.sh
+  398  cd PolyglotProto/
+  399  export PYTHONPATH=$PYTHONPATH:$PATH
+  400  ls
+  401  cat  nohup_wandb_agent.out
+  402  CUDA_VISIBLE_DEVICES=0 nohup wandb agent spooky-platypuses/polyglot-graph-networks/4gcc4gsz &> nohup_wandb_agent_2.out
+  403  cat Configs/finetuning_config.sh 
+  404  ls
+  405  cat nohup_pretraining_result.out 
+  406  cat Configs/pretraining_config.sh 
+  407  cat ../pretraining_run_store_best_output_cmd 
+  408  cat store_best_output_cmd
+  409  cat ../store_best_output_cmd
+  410  cd ../
+  411  ls
+  412  cd -
+  413  cat nohup_pretraining_config.out 
+  414  grep vocab nohup_pretraining_config.out
+  415  grep split nohup_pretraining_config.out
+  416  grep vocab nohup_pretraining_config.out
+  417  cat Configs/finetuning_config.sh 
+  418  cat Configs/finetuning_config.sh
+  419  git pull
+  420  CUDA_VISIBLE_DEVICES=0 nohup wandb agent spooky-platypuses/polyglot-graph-networks/4gcc4gsz &> nohup_wandb_agent.out
+  421  conda activate PolyglotProto
+  422  cd PolyglotProto/
+  423  export PYTHONPATH=$PYTHONPATH:$PATH
+  424  ls
+  425  ps x
+  426  cat nohup_finetuning.out 
+  427  cat nohup_wandb_agent
+  428  cat nohup_wandb_agent.out 
+  429  cat nohup_wandb_agent_2.out 
+  430  conda env activate PolyglotProto
+  431  conda activate PolyglotProto
+  432  cd PolyglotProto/
+  433  cat ../python_path.sh 
+  434  export PYTHONPATH=$PYTHONPATH:$PATH
+  435  git pull
+  436  CUDA_VISIBLE_DEVICES=0 nohup wandb agent spooky-platypuses/polyglot-graph-networks/4gcc4gsz &> nohup_wandb_agent_2.out
+  437  jobs
+  438  ps 
+  439  ps x
+  440  cat nohup_wandb_agent_2.out 
+  441  cat ../finetuning_cmd 
+  442  CUDA_VISIBLE_DEVICES=0 nohup bash Configs/finetuning_config.sh &> nohup_finetuning.out &
+  443  jobs
+  444  cat nohup_finetuning.out
+  445  CUDA_VISIBLE_DEVICES=0 nohup wandb agent spooky-platypuses/polyglot-graph-networks/0ncxgs4n &> nohup_wandb_agent_2.out
+  446  bg
+  447  jobs
+  448  ps x
+  449  cat nohup_wandb_agent_2.out
+  450  ls
+  451  conda env list
+  452  git 
+  453  git clone git@github.com:matanost/OneForAll.git
+  454  cd OneForAll/
+  455  ls
+  456  cat environment.yml 
+  457  conda env create -f environment.yml -n OneForAll
+  458  conda env list
+  459  cd OneForAll/
+  460  conda env create -f environment.yml -n OneForAll
+  461  conda list env
+  462  conda env list
+  463  ls
+  464  conda env remove -n OneForAll
+  465  which conda
+  466  rm ../miniconda3/envs/OneForAll/ -r
+  467  conda env create -f environment.yml -n OneForAll
+  468  ls
+  469  nvidia-smi
+  470  ls
+  471  python
+  472  export PYTHONPATH=$PYTHONPATH:$PATH
+  473  CUDA_VISIBLE_DEVICES=0,1 nohup python run_cdm.py --override e2e_all_config.yaml &> nohup_oneforall_run.out
+  474  ps x
+  475  ps 
+  476  ps x
+  477  cat nohup_oneforall_run.out 
+  478  python -m bitsandbytes
+  479  git clone https://github.com/TimDettmers/bitsandbytes.git
+  480  cd bitsandbytes
+  481  CUDA_VERSION=116 make cuda11x
+  482  python setup.py install
+  483  python -m bitsandbytes
+  484  CUDA_VISIBLE_DEVICES=0 python -m bitsandbytes
+  485  CUDA_VISIBLE_DEVICES=0,1 nohup python run_cdm.py --override e2e_all_config.yaml &> nohup_oneforall_run.out
+  486  cat nohup_oneforall_run.out 
+  487  cd ../
+  488  CUDA_VISIBLE_DEVICES=0,1 nohup python run_cdm.py --override e2e_all_config.yaml &> nohup_oneforall_run.out
+  489  cat nohup_oneforall_run.out 
+  490  pip install bitsandbytes
+  491  less environment.yml 
+  492  CUDA_VISIBLE_DEVICES=0,1 nohup python run_cdm.py --override e2e_all_config.yaml &> nohup_oneforall_run.out
+  493  cat nohup_oneforall_run.out 
+  494  CUDA_VISIBLE_DEVICES=0,1 python run_cdm.py --override e2e_all_config.yaml
+  495  git clone https://github.com/TimDettmers/bitsandbytes.git
+  496  cd bitsandbytes
+  497  CUDA_VERSION=116 make cuda11x
+  498  python setup.py install
+  499  python -m bitsandbytes
+  500  cd ../
+  501  ls
+  502  CUDA_VISIBLE_DEVICES=0,1 python run_cdm.py --override e2e_all_config.yaml
+  503  nvidia-smi
+  504  BNB_CUDA_VERSION=123 CUDA_VISIBLE_DEVICES=0,1 python run_cdm.py --override e2e_all_config.yaml
+  505  jobs
+  506  conda activate OneForAll
+  507  echo 'BNB_CUDA_VERSION=123 CUDA_VISIBLE_DEVICES=0,1 nohup python run_cdm.py --override e2e_all_config.yaml &> nohup_oneforall.out' > oneforall.cmd
+  508  cd OneForAll/
+  509  cat ../oneforall.cmd 
+  510  BNB_CUDA_VERSION=123 CUDA_VISIBLE_DEVICES=0,1 nohup python run_cdm.py --override e2e_all_config.yaml &> nohup_oneforall.out
+  511  bg
+  512  jobs
+  513  ps x
+  514  cat nohup_oneforall
+  515  cat nohup_oneforall.out 
+  516  ls
+  517  jobs
+  518  ps x
+  519  kill 1989567
+  520  ojbs
+  521  jobs
+  522  ps x
+  523  BNB_CUDA_VERSION=123 CUDA_VISIBLE_DEVICES=0,1 nohup python run_cdm.py --override e2e_all_config.yaml &> nohup_oneforall.out
+  524  bg
+  525  jobs
+  526  cat nohup_oneforall.out 
+  527  ps x
+  528  jobs
+  529  ls
+  530  cd OneForAll/
+  531  ls
+  532  rm nohup_oneforall_run.out 
+  533  cat nohup_oneforall.out 
+  534  uname -r
+  535  cat /etc/os-release
+  536  cd OneForAll/
+  537  conda env list
+  538  conda env create a
+  539  conda create -n test
+  540  history
+  541  nvidia-smi
+  542  conda env list
+  543  conda activate OneForAll
+  544  git status
+  545  cd OneForAll/
+  546  git status
+  547  conda list 
+  548  conda list | grep cuda
+  549  conda list | grep bits
+  550  conda list | grep torch
+  551  conda env list
+  552  exit
+  553  conda activate OneForAll
+  554  python3 -m bitsandbytes
+  555  BNB_VERSION_CUDA=123 python3 -m bitsandbytes
+  556  CUDA_VISIBLE_DEVICES=0 python -m bitsandbytes
+  557  history
+  558  git status
+  559  cd OneForAll/
+  560  git status
+  561  git branch
+  562  history > history.txt
